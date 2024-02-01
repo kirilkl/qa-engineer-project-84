@@ -2,7 +2,7 @@
 test-cases:
 - summary: |
     Проверка счётчика корзины
-    status: pass
+  status: pass
 
 - summary: |
     Проверка добавление товара в корзину
@@ -10,39 +10,39 @@ test-cases:
 
 - summary: |
     Проверка удаления товара из корзины
-    status: pass
+  status: pass
 
 - summary: |
     Отображение фактической стоимости товара (с учётом скидки) в корзине
-    status: pass
+  status: pass
 
 - summary: |
     Отображение стоимости товара (без учёта скидки) в корзине
-    status: pass
+  status: pass
 
 - summary: |
     Отображение общей суммы стоимости товаров (без учёта скидки) в корзине
-    status: fail
+  status: fail
 
 - summary: |
     Отображение общей суммы стоимости товаров (с учётом скидки) в корзине
-    status: pass
+  status: pass
 
 - summary: |
     Проверка оформления заказа
-    status: pass
+  status: pass
  
 - summary: |
     Фильтрация по производителю 
-    status: pass
+  status: pass
 
 - summary: |
     Вывод минимального значения стоимости товара в разделе цена, поле "от"
-    status: fail
+  status: fail
 
 - summary: |
     Ввод невалидных значений в поле "от" раздела цены
-    status: fail
+  status: fail
 
 bugreports:
 - summary: |
