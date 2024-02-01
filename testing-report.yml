@@ -1,5 +1,4 @@
 ---
-test-cases:
 - summary: |
     Проверка счётчика корзины
   status: pass
