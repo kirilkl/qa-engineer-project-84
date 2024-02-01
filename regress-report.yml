@@ -42,7 +42,7 @@ test-cases:
 
 - summary: |
     Ввод невалидных значений в поле "от" раздела цены
-  status: fail
+    status: fail
 
 bugreports:
 - summary: |
