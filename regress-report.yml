@@ -6,7 +6,7 @@ test-cases:
 
 - summary: |
     Проверка добавление товара в корзину
-    status: pass
+  status: pass
 
 - summary: |
     Проверка удаления товара из корзины
