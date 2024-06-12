@@ -39,3 +39,42 @@
      Поле "от" остаётся пустым
   actual-result: |
      Ввелась "е" в поле "от" см.скрин 3
+    ---
+- summary: |
+     Выбранная категория товаров сохраняется при переключении страницы
+  environment: |
+    https://hexlet-products-store.vercel.app/ , version 1, Windows 10 Pro 22H2 19045.3930, Google Chrome 121.0.6167.139
+  steps-to-reproduce: |
+    - Открыть страницу с товарами 
+    - Выбрать категорию
+    - Нажать на кнопку "следующая"
+  expected-result: |
+     Выбранная ранее категория сбрасывается 
+  actual-result: |
+     Выбранная ранее категория сохраняется 
+    ---
+- summary: | 
+    Выключенный чекбокс "В наличии" скрывает товары
+  environment: |
+    https://hexlet-products-store.vercel.app/ , version 1, Windows 10 Pro 22H2 19045.3930, Google Chrome 121.0.6167.139
+  steps-to-reproduce: |
+    - Открыть страницу с товарами 
+    - Убираем галочку из чекбокса "В наличии"
+  expected-result: |
+     Выводятся все товары с учётом выбранных фильтров 
+  actual-result: |
+     Пустой список товаров
+    ---
+- summary: | 
+    Нет варианта отмены категории товаров
+  environment: |
+    https://hexlet-products-store.vercel.app/ , version 1, Windows 10 Pro 22H2 19045.3930, Google Chrome 121.0.6167.139
+  steps-to-reproduce: |
+    - Открыть страницу с товарами 
+    - Нажимаем "Категория" 
+  expected-result: |
+     В выпадающем списке помимо списка товаров, есть кнопка "не выбрано" 
+  actual-result: |
+     Нет варианта "не выбрано" 
+
+    
